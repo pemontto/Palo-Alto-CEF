@@ -1,0 +1,15 @@
+CEF:0|Palo Alto Networks|PAN-OS|$sender_sw_version|$type rt=$cef-formatted-receive_time
+deviceExternalId=$serial start=$cef-formatted-time_generated src=$src dst=$dst cs1Label=Rule cs1=$rule
+cs3Label=Virtual System cs3=$vsys cs4Label=Source Zone cs4=$from cs5Label=Destination Zone cs5=$to
+deviceInboundInterface=$inboudn_if deviceOutboundInterface=$outbound_if cs6Label=LogProfile cs6=$logset
+cn1Label=SessionID cn1=$$sessionid cnt=$repeatcnt spt=$sport dpt=$dport $proto=$proto act=$action
+PanOSDGl1=$dg_hier_level_1 PanOSDGl2=$dg_hier_level_2 PanOSDGl3=$dg_hier_level_3
+PanOSDGl4=$dg_hier_level_4 PanOSVsysName=$vsys_name dvchost=$device_name externalId=$seqno
+PanOSAssocID=$assoc_id PanOSPayloadProtID=$ppid PanOSChunkType=$sctp_chunk_type
+PanOSSCTPVerTag1=$verif_tag_1 PanOSSCTPVerTag2=$verif_tag_2 PanOSSCTPCauseCode=$sctp_cause_code
+PanOSDiameterApp=$diam_app_id PanOSDiameterCmdCode=$diam_cmd_code
+PanOSDiameterAVPCode=$diam_avp_code PanOSSCTPStreamID=$stream_id
+PanOSSCTPAssocEndReason=$assoc_end_reason
+PanOSOpCode=$op_code PanOSSCCPCallingPartySSN=$sccp_calling_ssn PanOSSCCPCallingGT=$sccp_calling_gt
+PanOSSCTPFilter=$sctp_filter PanOSSCTPChunks=$chunks PanOSSCTPChunkSent=$chunks_sent
+PanOSSCTPChunkRcv=$chunks_received PanOSRuleUUID=$rule_uuid
